@@ -10,6 +10,7 @@ RUN mv $HADOOP_HOME/etc/hadoop/core-site.xml  $HADOOP_HOME/etc/hadoop/core-site.
 
 ADD conf/* $HADOOP_HOME/etc/hadoop/
 ADD start-ssh-serf.sh  /root/
+ADD wordcount.sh /root/
 RUN chmod a+x /root/start-ssh-serf.sh
 
 #format namenode
