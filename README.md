@@ -27,7 +27,7 @@ sudo docker build -t="kdf5000/ubuntu-hadoop" .
 ```
 * 进入hadoop-hydra目录，执行
 ```
-sudo docker build -t="kdf5000/hadoop-hydra"
+sudo docker build -t="kdf5000/hydra-hadoop"
 ```
 #####创建集群
 进入项目根目录，执行

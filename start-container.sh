@@ -13,7 +13,7 @@ then
 fi
 #echo $node_num
 #stop all the master and slave
-sudo docker rm -f $(sudo docker ps |awk '/(slave)|(master)/{print $1}')
+sudo docker rm -f $(sudo docker ps |awk '/(slave)|(master)/{print $1}') &> /dev/null
 
 #start master first
 echo "start master..."
