@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # test the hadoop cluster by running wordcount
-
+#ensure that the env is correct
+source /etc/profile
 # create input files
 rm -r -f input &> /dev/null 
 mkdir input
