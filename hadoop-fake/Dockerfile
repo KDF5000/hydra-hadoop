@@ -1,13 +1,14 @@
 # install hadoop and hbase in a docker
-FROM ubuntu:14.04
+#FROM ubuntu:14.04
+FROM kdf5000/serf-dnsmasq
 MAINTAINER KDF5000 <kdf5000@163.com>
-RUN mv /etc/apt/sources.list /etc/apt/sources.list.old \
-    && echo "deb mirror://mirrors.ubuntu.com/mirrors.txt trusty main restricted universe multiverse" >> /etc/apt/sources.list \
-    && echo "deb mirror://mirrors.ubuntu.com/mirrors.txt trusty-updates main restricted universe multiverse" >> /etc/apt/sources.list \
-    && echo "deb mirror://mirrors.ubuntu.com/mirrors.txt trusty-backports main restricted universe multiverse" >> /etc/apt/sources.list \
-    && echo "deb mirror://mirrors.ubuntu.com/mirrors.txt trusty-security main restricted universe multiverse" >> /etc/apt/sources.list
+#RUN mv /etc/apt/sources.list /etc/apt/sources.list.old \
+#    && echo "deb mirror://mirrors.ubuntu.com/mirrors.txt trusty main restricted universe multiverse" >> /etc/apt/sources.list \
+#    && echo "deb mirror://mirrors.ubuntu.com/mirrors.txt trusty-updates main restricted universe multiverse" >> /etc/apt/sources.list \
+#    && echo "deb mirror://mirrors.ubuntu.com/mirrors.txt trusty-backports main restricted universe multiverse" >> /etc/apt/sources.list \
+#    && echo "deb mirror://mirrors.ubuntu.com/mirrors.txt trusty-security main restricted universe multiverse" >> /etc/apt/sources.list
 
-RUN apt-get -qq update
+#RUN apt-get -qq update
 
 #RUN apt-get -qqy install wget
 #RUN apt-get -qqy install perl
@@ -77,4 +78,8 @@ EXPOSE 8030 8031 8032 8033 8040 8042 8060 8088 50060
 #hbase ports
 EXPOSE 60010 60000 60030 60020 8080
 
-CMD "/root/start_service.sh"; "bash"
+#serf
+EXPOSE 7373 7946
+
+#CMD "/root/start_service.sh"; "bash"
+CMD ["/bin/bash"]

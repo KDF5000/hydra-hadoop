@@ -2,11 +2,8 @@
 #set env
 echo "make profile work"
 source /etc/profile
-echo $JAVA_HOME
-# start hadoop
-echo "start ssh..."
-service ssh start
 
+# start hadoop
 echo "start dfs..."
 /usr/local/hadoop/sbin/start-dfs.sh
 
