@@ -13,11 +13,11 @@ then
 fi
 #echo $node_num
 #stop all the master and slave
-sudo docker rm -f $(sudo docker ps |awk '/(slave)|(master)/{print $1}') &> /dev/null
+sudo docker rm -f $(sudo docker ps -a |awk '/(slave)|(master)/{print $1}') &> /dev/null
 
 #start master first
 echo "start master..."
-sudo docker run -d -t --dns 127.0.0.1 -P --name master -h master.kdf5000.com -w /root kdf5000/hydra-hadoop &> /dev/null
+sudo docker run -d -t --dns 127.0.0.1 -P --name master -h master.kdf5000.com -w /root kdf5000/hydra-hadoop 
 # get the IP address of master container
 MASTER_IP=$(sudo docker inspect -f="{{.NetworkSettings.IPAddress}}" master)
 echo "master starts successfully with ipaddress $MASTER_IP"

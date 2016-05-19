@@ -24,6 +24,6 @@
 	</property>
 	<property>
 		<name>fs.defaultFS</name>
-		<value>hdfs://master:9000</value>
+		<value>hdfs://master.kdf5000.com:9000</value>
 	</property>
 </configuration>

@@ -21,13 +21,13 @@ fi
 
 cd hadoop-hydra
 
-echo "master.kdf5000.com" > conf/slaves
+echo "master.kdf5000.com" > conf/hadoop/slaves
 
 slave_num=$[size - 1]
 #echo $slave_num
 for i in `seq $slave_num`
 do
-	echo "slave$i.kdf5000.com" >> conf/slaves
+	echo "slave$i.kdf5000.com" >> conf/hadoop/slaves
 done
 
 #remove old image

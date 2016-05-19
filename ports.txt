@@ -1,20 +1,19 @@
-¶Ë¿Ú	×÷ÓÃ
-9000	fs.defaultFS£¬Èç£ºhdfs://172.25.40.171:9000
-9001	dfs.namenode.rpc-address£¬DataNode»áÁ¬½ÓÕâ¸ö¶Ë¿Ú
+9000	fs.defaultFSï¼Œå¦‚ï¼šhdfs://172.25.40.171:9000
+9001	dfs.namenode.rpc-addressï¼ŒDataNodeä¼šè¿æ¥è¿™ä¸ªç«¯å£
 50070	dfs.namenode.http-address
 50470	dfs.namenode.https-address
 50100	dfs.namenode.backup.address
 50105	dfs.namenode.backup.http-address
-50090	dfs.namenode.secondary.http-address£¬Èç£º172.25.39.166:50090
-50091	dfs.namenode.secondary.https-address£¬Èç£º172.25.39.166:50091
+50090	dfs.namenode.secondary.http-addressï¼Œå¦‚ï¼š172.25.39.166:50090
+50091	dfs.namenode.secondary.https-addressï¼Œå¦‚ï¼š172.25.39.166:50091
 50020	dfs.datanode.ipc.address
 50075	dfs.datanode.http.address
 50475	dfs.datanode.https.address
-50010	dfs.datanode.address£¬DataNodeµÄÊı¾İ´«Êä¶Ë¿Ú
+50010	dfs.datanode.addressï¼ŒDataNodeçš„æ•°æ®ä¼ è¾“ç«¯å£
 8480	dfs.journalnode.rpc-address
 8481	dfs.journalnode.https-address
 8032	yarn.resourcemanager.address
-8088	yarn.resourcemanager.webapp.address£¬YARNµÄhttp¶Ë¿Ú
+8088	yarn.resourcemanager.webapp.addressï¼ŒYARNçš„httpç«¯å£
 8090	yarn.resourcemanager.webapp.https.address
 8030	yarn.resourcemanager.scheduler.address
 8031	yarn.resourcemanager.resource-tracker.address
@@ -24,14 +23,13 @@
 8188	yarn.timeline-service.webapp.address
 10020	mapreduce.jobhistory.address
 19888	mapreduce.jobhistory.webapp.address
-2888	ZooKeeper£¬Èç¹ûÊÇLeader£¬ÓÃÀ´¼àÌıFollowerµÄÁ¬½Ó
-3888	ZooKeeper£¬ÓÃÓÚLeaderÑ¡¾Ù
-2181	ZooKeeper£¬ÓÃÀ´¼àÌı¿Í»§¶ËµÄÁ¬½Ó
-60010	hbase.master.info.port£¬HMasterµÄhttp¶Ë¿Ú
-60000	hbase.master.port£¬HMasterµÄRPC¶Ë¿Ú
-60030	hbase.regionserver.info.port£¬HRegionServerµÄhttp¶Ë¿Ú
-60020	hbase.regionserver.port£¬HRegionServerµÄRPC¶Ë¿Ú
-8080	hbase.rest.port£¬HBase REST serverµÄ¶Ë¿Ú
+2888	ZooKeeperï¼Œå¦‚æœæ˜¯Leaderï¼Œç”¨æ¥ç›‘å¬Followerçš„è¿æ¥
+3888	ZooKeeperï¼Œç”¨äºLeaderé€‰ä¸¾
+2181	ZooKeeperï¼Œç”¨æ¥ç›‘å¬å®¢æˆ·ç«¯çš„è¿æ¥
+60010	hbase.master.info.portï¼ŒHMasterçš„httpç«¯å£
+60000	hbase.master.portï¼ŒHMasterçš„RPCç«¯å£
+60030	hbase.regionserver.info.portï¼ŒHRegionServerçš„httpç«¯å£
+60020	hbase.regionserver.portï¼ŒHRegionServerçš„RPCç«¯å£
+8080	hbase.rest.portï¼ŒHBase REST serverçš„ç«¯å£
 10000	hive.server2.thrift.port
 9083	hive.metastore.uris
-
